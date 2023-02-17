@@ -26,10 +26,10 @@ public class MoodAnalyserTest {
     }
 
     @Test
-    public void moodAnalyser() {
-        String ans = object.moodAnalyser();
-        Assert.assertEquals("HAPPY", ans);
+    public void moodAnalyser() throws MoodAnalyserException {
+        String result = object.moodAnalyser();
+        Assert.assertEquals("HAPPY", result);
         ;
-        System.out.println(ans);
+        System.out.println(result);
     }
 }
