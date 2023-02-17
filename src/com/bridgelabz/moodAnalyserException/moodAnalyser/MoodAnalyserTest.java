@@ -1,12 +1,6 @@
 package com.bridgelabz.moodAnalyserException.moodAnalyser;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
-import junit.framework.Assert;
+import org.junit.*;
 
 public class MoodAnalyserTest {
     @BeforeClass
@@ -33,8 +27,8 @@ public class MoodAnalyserTest {
 
     @Test
     public void moodAnalyser() {
-        String ans = object.moodAnalyser("I am in Happy Mood");
-        Assert.assertEquals("HAPPY", ans);
+        String ans = object.moodAnalyser("I am in Sad Mood");
+        Assert.assertEquals("SAD", ans);
         ;
         System.out.println(ans);
     }
